@@ -10,6 +10,13 @@ body {
     background-image: url("images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
     background-color: #d6e1ff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.summary-card {
+  flex-grow: 1;
 }
 
 img {
@@ -80,9 +87,20 @@ h3 {
     font-weight: 700;
     border-radius: 15px;
     margin: 15px 0;
+    transition: background-color .5s;
 }
 .cancel {
     color: hsl(224, 23%, 55%);
     font-weight: 500;
     text-decoration: none;
 }   
+
+@media (min-width:1000px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+        background-color: #e0e8ff
+    }
+    .container {
+        width: 30%;
+    }
+}
